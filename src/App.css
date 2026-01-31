@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GENERICS */
+body {
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f5f1e8;
+    padding: 1rem 2rem;
+    min-height: 80px;
+}
+
+/* logo */
+header img {
+    height: 48px;
+    width: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* titolo */
+header h1 {
+    font-size: 1.8rem;
+    margin-left: 1rem;
+}
+
+/* nav */
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+header li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+header li a:hover {
+    color: #c47b3a;
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-wrap: wrap;          /* fondamentale */
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #f5f1e8;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    justify-content: space-between;
+}
+
+/* input */
+form input[type="text"] {
+    flex: 1 1 45%;
+    font-size: 1.2rem;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* textarea */
+form textarea {
+    flex: 1 1 100%;
+    min-height: 150px;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+/* checkbox */
+form label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* focus */
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #c47b3a;
+}
+
+/* ANTEPRIMA */
+.post-preview {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
